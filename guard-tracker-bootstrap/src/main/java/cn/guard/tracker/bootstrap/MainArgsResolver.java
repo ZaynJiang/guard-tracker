@@ -1,6 +1,5 @@
 package cn.guard.tracker.bootstrap;
 import cn.guard.tracker.bootstrap.bootstrap.core.utils.StringUtils;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
