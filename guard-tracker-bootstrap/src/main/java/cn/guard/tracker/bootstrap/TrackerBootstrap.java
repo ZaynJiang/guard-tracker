@@ -1,7 +1,8 @@
-package cn.guard.tracker;
+package cn.guard.tracker.bootstrap;
 
 
 import java.lang.instrument.Instrumentation;
+import java.util.Map;
 
 
 public class TrackerBootstrap {
@@ -10,6 +11,8 @@ public class TrackerBootstrap {
 		if(agentArgs == null){
 			agentArgs = "";
 		}
+		MainArgsResolver argsResolver = new  MainArgsResolver();
+		Map<String, String> mainArgs = argsResolver.parse(agentArgs);
 
 	}
 
